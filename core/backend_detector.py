@@ -50,8 +50,9 @@ def wait_for_backend(
             print("\n[backend] Backend detection cancelled by user.")
             raise
         except requests.RequestException as exc:
+            # TODO: add a developer/debug mode to print the full exception details.
             print(
-                f"[backend] Waiting for backend at {endpoint_url}: {exc}. "
+                f"[backend] Waiting for backend at {endpoint_url}. "
                 f"Retrying in {retry_seconds} seconds..."
             )
 
