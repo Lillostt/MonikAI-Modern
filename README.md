@@ -1,5 +1,4 @@
-NOTE: THIS DESCRIPTION IS FROM THE ORIGINAL CREATORS RELEASE, Rubiksman78
-This sub/submod is aiming to improve and update the ORIGINAL MonikAI submod. This is a modernized API-based version of Monik.A.I that replaces Playwright browser automation with direct Text Generation WebUI API communication. Supports Python 3.11, CUDA acceleration, and Text Generation WebUI 4.9
+This submod is aiming to improve and update the ORIGINAL MonikAI submod. This is a modernized API-based version of Monik.A.I that replaces Playwright browser automation with direct Text Generation WebUI API communication. Supports Python 3.11, CUDA acceleration, and Text Generation WebUI 4.9. This repository is a modernized continuation of Rubiksman78's original MonikA.I project. The goal is to preserve the original functionality while replacing browser automation with a direct Text Generation WebUI API backend, improving compatibility with modern Python versions and NVIDIA GPUs
 
 
 ORIGINAL DEVELOPER RELEASE:
