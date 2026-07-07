@@ -6,6 +6,7 @@ MonikAI Modern Design Ideas
 4. Bundle all windows including Powershell windows and keep them hidden
 5. Keep installation user friendly and simple
 6. Add more variables to Monika's personality based upon affection, conversation, and other effects to the surroundings of the player and Monika
+7. Conversation Continuity: AI conversations should feel like a continuation of Monika After Story rather than a separate chatbot session. Whenever practical, MonikAI should use recent MAS dialogue and relationship context so transitions between scripted dialogue and AI dialogue are natural.
 
 
    MonikAI Modern
