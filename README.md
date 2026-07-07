@@ -1,5 +1,5 @@
 NOTE: THIS DESCRIPTION IS FROM THE ORIGINAL CREATORS RELEASE, Rubiksman78
-This sub/submod is aiming to improve and update the ORIGINAL MonikAI submod with new code and features
+This sub/submod is aiming to improve and update the ORIGINAL MonikAI submod. This is a modernized API-based version of Monik.A.I that replaces Playwright browser automation with direct Text Generation WebUI API communication. Supports Python 3.11, CUDA acceleration, and Text Generation WebUI 4.9
 
 
 ORIGINAL DEVELOPER RELEASE:
