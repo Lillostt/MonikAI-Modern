@@ -25,6 +25,9 @@ DEFAULT_CONFIG: Dict[str, Any] = {
     "USE_SPEECH_RECOGNITION": 0,
     "VOICE_SAMPLE_TORTOISE": "Choose a Tortoise voice sample",
     "VOICE_SAMPLE_COQUI": "Choose a YourTTS voice sample",
+    "backend": "textgen",
+    "api_url": "http://127.0.0.1:5000/v1/chat/completions",
+    "model": "Qwen3-8B-Q4_K_M.gguf",
 }
 
 _config_cache: Optional[Dict[str, Any]] = None
