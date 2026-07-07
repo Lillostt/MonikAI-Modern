@@ -1,4 +1,4 @@
-MonikAI Modern Design Goal
+MonikAI Modern Design Ideas
 
 1. The player should only have to launch Monika. Everything else should happen automatically
 2. The player can browse their files to choose the RIGHT folders/paths or have it automatically detected
@@ -6,4 +6,35 @@ MonikAI Modern Design Goal
 4. Bundle all windows including Powershell windows and keep them hidden
 5. Keep installation user friendly and simple
 6. Add more variables to Monika's personality based upon affection, conversation, and other effects to the surroundings of the player and Monika
-7. 
+
+
+   MonikAI Modern
+
+Vision
+
+The easiest way to give Monika a modern AI backend.
+
+──────────────────────────────
+
+v1.1
+✓ Automatic model loading
+✓ Backend detection
+✓ Startup improvements
+
+v1.2
+✓ Better settings
+✓ Startup manager
+✓ Cleaner UI
+
+v2.0
+✓ Setup Wizard
+✓ Automatic backend installation
+✓ Automatic model download
+✓ One-click launch
+
+v3.0
+✓ Deep MAS integration
+✓ Shared memories
+✓ Affection synchronization
+✓ Voice improvements
+✓ Multi-backend ecosystem
