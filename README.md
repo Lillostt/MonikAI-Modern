@@ -1,3 +1,10 @@
+NOTE: THIS DESCRIPTION IS FROM THE ORIGINAL CREATORS RELEASE, Rubiksman78
+This sub/submod is aiming to improve and update the ORIGINAL MonikAI submod with new code and features
+
+
+ORIGINAL DEVELOPER RELEASE:
+
+
 <h1 align="center"> :computer: MonikA.I. submod </h1>
 
 <p align="center">
