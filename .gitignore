@@ -1,0 +1,10 @@
+
+__pycache__
+.github
+.vscode
+chat_history.txt
+config.json
+storage.json
+venv
+libs
+.venv/

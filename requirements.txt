@@ -1,0 +1,7 @@
+PyYAML
+numpy
+playwright
+torch
+torchvision
+torchaudio
+ipython
