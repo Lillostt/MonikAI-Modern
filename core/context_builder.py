@@ -23,7 +23,7 @@ class ContextBuilder:
         self._initialize_metadata(context)
         return context
     
-    def _initialize_metadata(self, context: RelationshipContext,) -> None:
+    def _initialize_metadata(self, context: RelationshipContext) -> None:
         """
         Sets essential runtime metadata for new contexts
         
