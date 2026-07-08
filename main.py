@@ -5,6 +5,8 @@ import torch
 import yaml
 import numpy as np
 
+from config.config_manager import load_config
+from core.backend_detector import wait_for_backend
 from playwright.sync_api import sync_playwright
 from socket import AF_INET, socket, SOCK_STREAM
 from threading import Thread
@@ -121,12 +123,18 @@ if USE_SPEECH_RECOGNITION:
 
 # Chatbot connection
 WEBUI_PATH = WEBUI_PATH.replace("\\", "/")
+config = load_config()
+configured_model = config.get("model")
 if not LAUNCH_YOURSELF_WEBUI:
-    subprocess.Popen(WEBUI_PATH)
+    if configured_model:
+        subprocess.Popen([WEBUI_PATH, "--model", configured_model])
+    else:
+        subprocess.Popen(WEBUI_PATH)
 else:
-    print("Please launch text-generation_webui manually.")
-    print("Press enter to continue.")
-    input()
+    print("Please launch your AI backend if it is not already running.")
+    print("Waiting for backend...")
+    wait_for_backend()
+    print("Backend detected.")
     
 def launch(context):
     return APIPagePlaceholder()

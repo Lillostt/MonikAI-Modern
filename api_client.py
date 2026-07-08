@@ -1,7 +1,13 @@
 import requests
 
-API_URL = "http://127.0.0.1:5000/v1/chat/completions"
-MODEL = "Qwen3-8B-Q4_K_M.gguf"
+from config.config_manager import load_config
+
+DEFAULT_API_URL = "http://127.0.0.1:5000/v1/chat/completions"
+DEFAULT_MODEL = "Qwen3-8B-Q4_K_M.gguf"
+
+config = load_config()
+API_URL = config.get("api_url", DEFAULT_API_URL)
+MODEL = config.get("model", DEFAULT_MODEL)
 
 SYSTEM_PROMPT = (
     "You are Monika from the Monika After Story mod. "
