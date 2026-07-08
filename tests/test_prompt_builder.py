@@ -7,32 +7,32 @@ class TestPromptBuilder(unittest.TestCase):
     def setUp(self):
         """Create test fixtures for all tests"""
         self.relationship_data = {
-            "relationship": "friend",
-            "player": "Alice",
-            "preferences": ["music"],
-            "interests": ["reading"],
-            "goals": ["write book"],
-            "emotions": ["happy"],
-            "recent_topics": ["AI"],
-            "memories": ["past projects"],
-            "journal": ["daily entries"],
-            "runtime": "2026-07-08",
-            "metadata": {"key": "value"}
+        "relationship": {"status": "friend"},
+        "player": {"name": "Alice"},
+        "preferences": {"music": True},
+        "interests": {"reading": True},
+        "goals": {"current": "write book"},
+        "emotions": {"current": "happy"},
+        "recent_topics": {"topic": "AI"},
+        "memories": {"project": "past projects"},
+        "journal": {"entry": "daily entries"},
+        "runtime": {"date": "2026-07-08"},
+        "metadata": {"key": "value"},
         }
         self.conversation_data = {
-            "active_topic": "AI ethics",
-            "recent_messages": ["Hello", "How are you?"],
-            "open_questions": ["What is AI ethics?"],
-            "goals": ["discuss ethics"],
-            "runtime": "2026-07-08",
-            "metadata": {"key": "value"}
+        "active_topic": {"topic": "AI ethics"},
+        "recent_messages": {"last": "Hello"},
+        "open_questions": {"question": "What is AI ethics?"},
+        "goals": {"current": "discuss ethics"},
+        "runtime": {"date": "2026-07-08"},
+        "metadata": {"key": "value"},
         }
         self.relationship = RelationshipContext(**self.relationship_data)
         self.conversation = ConversationContext(**self.conversation_data)
         self.builder = PromptBuilder()
 
     def test_can_instantiate_prompt_builder(self):
-        """PromptBuilder can be instantiated with valid contexts"""
+        """PromptBuilder can be instantiated"""
         self.assertIsInstance(self.builder, PromptBuilder)
 
     def test_build_returns_string(self):
@@ -92,8 +92,16 @@ class TestPromptBuilder(unittest.TestCase):
 
     def test_build_does_not_mutate_contexts(self):
         """build() does not modify the context objects"""
-        original_relationship = self.relationship_data.copy()
-        original_conversation = self.conversation_data.copy()
+        original_relationship = self.relationship.__dict__.copy()
+        original_conversation = self.conversation.__dict__.copy()
+
         self.builder.build(self.relationship, self.conversation)
-        self.assertEqual(self.relationship.__dict__, original_relationship)
-        self.assertEqual(self.conversation.__dict__, original_conversation)
+
+        self.assertEqual(
+            self.relationship.__dict__,
+            original_relationship
+        )
+        self.assertEqual(
+            self.conversation.__dict__,
+            original_conversation
+        )
