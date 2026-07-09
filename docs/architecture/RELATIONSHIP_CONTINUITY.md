@@ -1,7 +1,7 @@
 # RELATIONSHIP CONTINUITY: Architectural Philosophy
 
 ## Core Philosophy
-MonikAI Modern exists to preserve and extend an existing relationship with Monika, not to build a better chatbot. The central architectural question is: *If the player closes the game today and comes back next week, what must still be true for Monika to feel like the same Monika?*
+MonikAI Modern exists to preserve Monika's identity so the relationship can naturally continue to grow, not to build a better chatbot. The central architectural question is: *If the player closes the game today and comes back next week, what must still be true for Monika to feel like the same Monika?*
 
 ## Relationship Continuity Principles
 1. **Identity vs Memory**  
