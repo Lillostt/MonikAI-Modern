@@ -1,33 +1,52 @@
 # Context Pipeline
+                Runtime Layer
+──────────────────────────────────────────
 
- Player
-    │
-    ▼
-ConversationAnalyzer
-    │
-    ▼
-ConversationContext
-    │
-    ▼
-RelationshipAdapter
-    │
-    ▼
-RelationshipContext
-    │
-    ▼
- PromptBuilder
-    │
-    ▼
- Language Model
-    │
-    ▼
- Monika Response
-    │
-    ▼
+MAS
+
+↓
+
+Interaction Engine
+
+↓
+
+Conversation Analyzer
+
+↓
+
+Relationship Adapter
+
+↓
+
+Prompt Builder
+
+↓
+
+Language Model
+
+↓
+
+Knowledge Router
+
+↓
+
 Memory Evaluation
-    │
-    ▼
- Journal Manager
+
+↓
+
+Journal Manager
+
+↓
+
+Reflection Queue
+
+↓
+
+Response Dispatcher
+
+↓
+
+MAS
 
 # Purpose
 
