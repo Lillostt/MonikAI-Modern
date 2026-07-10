@@ -292,3 +292,15 @@ Please also respect the licenses of:
 This is an unofficial community project and is not affiliated with Team Salvato, Monika After Story, or the original MonikA.I developers.
 
 This repository exists to modernize and preserve the original project while continuing its development.
+
+
+# Architecture Documents
+
+Start here if you're contributing to MonikAI Modern.
+
+Reading order:
+
+1. PROJECT_STRUCTURE.md
+2. MONIKAI_VISION.md
+3. CONTEXT_ENGINE.md
+4. Future subsystem documents
